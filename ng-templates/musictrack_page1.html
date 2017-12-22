@@ -1,0 +1,103 @@
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="common-bg">
+
+          <h2 class="page-title">Find a Job</h2>
+
+          <form>
+
+           <div class="row">
+               <div class="col-sm-3 text-left">
+                   <select ng-model="selectedCity1" ng-change="updateCityList(selectedCity1)">
+                       <option value="{{selectedCity1}}">{{selectedCity1}}</option>
+                       <option ng-repeat="x in cityList" value={{x.name}}>{{x.name}}</option>
+                   </select>
+
+                   <div ng-show="selectedCity1 !== 'Select'" ng-repeat="vehicle in vehicleList" class="text-left">
+                       <label>
+                           <input type="radio" name="beAGroup" ng-click="setDefault(person)" ng-model="selectedVehicle" ng-value="{{vehicle.name}}" />
+                           {{vehicle.name}} ({{vehicle.total_no}})
+                       </label>
+                   </div>
+               </div>
+               <div class="col-sm-3 text-left">
+                   <select ng-model="selectedCity2" ng-change="updateCityList(selectedCity2)">
+                       <option value="{{selectedCity2}}">{{selectedCity2}}</option>
+                       <option ng-repeat="x in cityList" value={{x.name}}>{{x.name}}</option>
+                   </select>
+                   <div ng-show="selectedCity2 !== 'Select'" ng-repeat="vehicle in vehicleList" class="text-left">
+                       <label>
+                           <input type="radio" name="beAGroup" ng-click="setDefault(person)" ng-model="selectedVehicle" ng-value="{{vehicle.name}}" />
+                           {{vehicle.name}} ({{vehicle.total_no}})
+                       </label>
+                   </div>
+               </div>
+               <div class="col-sm-3 text-left">
+                   <select ng-model="selectedCity3" ng-change="updateCityList(selectedCity3)">
+                       <option value="{{selectedCity3}}">{{selectedCity3}}</option>
+                       <option ng-repeat="x in cityList" value={{x.name}}>{{x.name}}</option>
+                   </select>
+                   <div ng-show="selectedCity3 !== 'Select'" ng-repeat="vehicle in vehicleList" class="text-left">
+                       <label>
+                           <input type="radio" name="beAGroup" ng-click="setDefault(person)" ng-model="selectedVehicle" ng-value="{{vehicle.name}}" />
+                           {{vehicle.name}} ({{vehicle.total_no}})
+                       </label>
+                   </div>
+               </div>
+               <div class="col-sm-3 text-left">
+                   <select ng-model="selectedCity4" ng-change="updateCityList(selectedCity4)">
+                       <option value="{{selectedCity4}}">{{selectedCity4}}</option>
+                       <option ng-repeat="x in cityList" value={{x.name}}>{{x.name}}</option>
+                   </select>
+                   <div ng-show="selectedCity4 !== 'Select'" ng-repeat="vehicle in vehicleList" class="text-left">
+                       <label>
+                           <input type="radio" name="beAGroup" ng-click="setDefault(person)" ng-model="selectedVehicle" ng-value="{{vehicle.name}}" />
+                           {{vehicle.name}} ({{vehicle.total_no}})
+                       </label>
+                   </div>
+               </div>
+           </div>
+              <div class="row">
+
+              </div>
+
+
+
+            <!--<div class="input-group">-->
+                <!--<div class="input-group-addon">-->
+                    <!--<i class="fa fa-search"></i>-->
+                <!--</div>-->
+
+                <!--<input type="text" class="form-control" id="search" placeholder="Search" ng-model="filterParams.searchText" ng-change="findMusic()" style=" margin-top: 0px;">-->
+
+                <!--<div class="input-group-addon" ng-click="resetFilter()">-->
+                    <!--<i class="fa fa-times" aria-hidden="true"></i>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<ul class="list-group" style="margin-top: 20px;">-->
+
+                <!--<li class="list-group-item" ng-repeat="tl in trackList track by $index">{{tl.title+ "   "}} <div ng-hide="tl.genres.length==0" style='display: inline;' class="" ng-repeat="gn in tl.genres">[{{gn.name}} ]<div ng-hide="" style='display: inline;' class=""></div>-->
+
+                <!--</div>-->
+                    <!--<div class="star pull-right" star-rating rating="tl.rating" read-only="false" max-rating="10" click="click1(param)"></div>-->
+                <!--</li>-->
+
+            <!--</ul>-->
+            <button ng-click="addNewTrack()" type="button" class="btn add-job-btn btn-top">Time Spent on Travel</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">Page 1</button>
+                <button type="button" class="btn btn-default"><a href="http://104.197.128.152:8000/v1/tracks?page=2">Page 2</a></button>
+                <button type="button" class="btn btn-default"><a href="http://104.197.128.152:8000/v1/tracks?page=3">Page 3</a></button>
+            </div>
+            <div>&nbsp;
+                <span class='your-choice-was' style='display: none;'>
+                  Your rating was <span class='choice'></span>.
+                </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> <!--row-->
+  </div> <!-- container-fluid -->

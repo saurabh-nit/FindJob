@@ -1,0 +1,75 @@
+body {
+  font-family: "Arima Madurai", cursive;
+  margin: 0 0 120px;
+  }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+/* music track page css */
+.page-title {
+  color: #3d3737;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 22px; }
+
+
+.common-bg {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 30px 45px 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 5px 1px #eeeeee;
+  -moz-box-shadow: 0px 0px 5px 1px #eeeeee;
+  box-shadow: 0px 0px 5px 1px #eeeeee;
+  margin-bottom: 50px;
+ }
+
+ .list-group li {
+  border-color: #000000;
+  text-align: left;
+  /*width: 50%;*/
+
+ }
+
+  .add-job-btn {
+    background: #fff;
+    color: #000000;
+    border: 1px solid  #000000 ;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+    display: block;
+    margin: 18px auto 25px;
+    width: 200px; }
+
+   .btn-group button {
+    border-color: black;
+    font-color :black;
+   }
+
+body {
+  text-align: center;
+  background: #f0f0f0;
+}
+
+  .star {
+    padding: 1px;
+    color: #ddd;
+    font-size: 20px;
+    text-shadow: .05em .05em #aaa;
+    list-style-type: none;
+    display: inline-block;
+    cursor: pointer;
+  
+
+   }
+    .filled {
+      color: #fd0;
+    }
+
+
+  .readonly .star.filled {
+    color: #666;
+  }
